@@ -1,0 +1,162 @@
+:root{
+    --azul:#134074;
+    --azulOscuro:#0B2545;
+    --azulGris:#8DA9C4;
+    --blanco:#fff;
+    --fuente:'Quicksand', sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--azulOscuro);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 750px;
+    width: 95%;
+}
+.contenedor-formulario:hover{
+    transform: scale(1.01);
+    transition: all .8s ease-out;
+    box-shadow: 20px 10px 20px 10px orange;
+}
+
+.contenedor-formulario{
+    animation-name:efecto;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count:infinite; */
+
+}
+
+/* @keyframes efecto {
+    0%{
+        transform:scale(1);
+        transition: all .9s ease-out;
+    }
+    50%{
+        transform:scale(1.1);
+        transition: all .9s ease-out;
+        box-shadow: 20px 10px 20px 10px orange;
+    }
+    100%{
+        transform:scale(1);
+        transition: all .9s ease-out;
+    }
+} */
+
+.imagen-formulario{
+    background-image: url('../img/logincuatro.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    flex: 0 0 calc(40%);
+    position: relative;
+    
+}
+.imagen-formulario::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
+   
+}
+
+@media(min-width:468px){
+    .imagen-formulario{
+        height: auto;
+        background-position: right;
+    }
+
+}
+@media(min-width:1200px){
+    .imagen-formulario{
+        background-position: center;
+    }
+}
+
+@media(min-width:468px){
+    .contenedor-formulario{
+        display: flex;
+    }
+}
+
+.formulario{
+    padding: 40px;
+    background-color: var(--azul);
+}
+.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
+    color: var(--blanco);
+}
+.texto-formulario h2{
+    font-size: 40px;
+    text-align: center;
+}
+.texto-formulario p{
+    font-size: 22px;
+    text-align: center;
+}
+.input label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.password-olvidada a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.input button{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.ingresar .log a{
+    background-color: var(--azulGris);
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .3s ease-in-out;
+}
+.ingresar .log:hover{
+    cursor: pointer;
+    background-color: var(--azulOscuro);
+    transition: all .4s ease-out;
+}
+.ingresar .log{
+    text-decoration: none;
+    color: wheat;
+    border: 2px solid gray;
+    border-radius: 30px;
+    background-color: rgb(144, 143, 139);
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+.ingresar .log{
+    display: flex;
+    justify-content: center;
+}
+
+.crear{
+   margin: 20px 10px;
+    color: white;
+}

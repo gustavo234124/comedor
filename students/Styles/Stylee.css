@@ -1,0 +1,395 @@
+*{
+    padding:0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.navegacion{
+    background-color: black;
+}
+
+
+.navegacion a{
+    color: white;
+    font-size: 20px;
+    margin: 25px;
+    text-decoration: none;
+    display: block;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+}
+.navegacion a:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid greenyellow;
+    transition: all .7s ease-out;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.navegacion .menuDos a{
+  color: red;
+}
+.navegacion .menuDos{
+    float: left;
+}
+
+.principal img{
+    width:100%;
+    height: 450px;
+}
+
+/* estilos de lsa tablas */
+/* .menuComidas table th{
+    border: 2px solid rgb(97, 97, 97);
+    width:240px;
+    background:green;
+}
+.menuComidas table td{<
+    border: 2px solid black;
+    background: rgb(146, 227, 251);
+   
+}*/
+body {
+	background: #2e2a2a;
+	color: #FFF;
+	font-size: 62.5%;
+	font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #e95846;
+	text-decoration: none;
+}
+
+.pricing-table-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.6em;
+	color: #FFF;
+	margin-top: 15px;
+	text-align: left;
+	margin-bottom: 25px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table-title a {
+	font-size: 0.6em;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+/** ========================
+ * Contenedor
+ ============================*/
+.pricing-wrapper {
+	width: 960px;
+	margin: 40px auto 0;
+}
+
+.pricing-table {
+	margin: 0 10px;
+	text-align: center;
+	width: 300px;
+	float: left;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.pricing-table:hover {
+	-webkit-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+
+.pricing-title {
+	color: #FFF;
+	background: #e95846;
+	padding: 20px 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table.recommended .pricing-title {
+	background: #2db3cb;
+}
+
+.pricing-table.recommended .pricing-action {
+	background: #2db3cb;
+}
+
+.pricing-table .price {
+	background: #403e3d;
+	font-size: 3.4em;
+	font-weight: 700;
+	padding: 20px 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table .price sup {
+	font-size: 0.4em;
+	position: relative;
+	left: 5px;
+}
+
+.table-list {
+	background: #FFF;
+	color: #3b403a;
+}
+
+.table-list li {
+	font-size: 1.4em;
+	font-weight: 700;
+	padding: 12px 8px;
+}
+
+/* .table-list li:before {
+	content: "\f00c";
+	font-family: 'FontAwesome';
+	display: inline-block;
+	position: relative;
+	right: 5px;
+	font-size: 16px;
+}  */
+
+.table-list li span {
+	font-weight: 400;
+}
+
+.table-list li span.unlimited {
+	color: #FFF;
+	background: #e95846;
+	font-size: 0.9em;
+	padding: 5px 7px;
+	display: inline-block;
+	-webkit-border-radius: 38px;
+	-moz-border-radius: 38px;
+	border-radius: 38px;
+}
+
+
+.table-list li:nth-child(2n) {
+	background: #F0F0F0;
+}
+
+.table-buy {
+	background: #FFF;
+	padding: 15px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.table-buy p {
+	float: left;
+	color: #37353a;
+	font-weight: 700;
+	font-size: 2.4em;
+}
+
+.table-buy p sup {
+	font-size: 0.5em;
+	position: relative;
+	left: 5px;
+}
+
+.table-buy .pricing-action {
+	float: right;
+	color: #FFF;
+	background: #e95846;
+	padding: 10px 16px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 1.4em;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.table-buy .pricing-action:hover {
+	background: #cf4f3e;
+}
+
+.recommended .table-buy .pricing-action:hover {
+	background: #228799;	
+}
+
+/** ================
+ * Responsive
+ ===================*/
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ 	.pricing-wrapper {
+ 		width: 768px;
+ 	}
+
+ 	.pricing-table {
+ 		width: 236px;
+ 	}
+	
+	.table-list li {
+		font-size: 1.3em;
+	}
+
+ }
+
+ @media only screen and (max-width: 767px) {
+ 	.pricing-wrapper {
+ 		width: 420px;
+ 	}
+
+ 	.pricing-table {
+ 		display: block;
+ 		float: none;
+ 		margin: 0 0 20px 0;
+ 		width: 100%;
+ 	}
+ }
+
+@media only screen and (max-width: 479px) {
+	.pricing-wrapper {
+		width: 300px;
+	}
+} 
+
+/*estilos de la encuesta*/
+.container {
+    width: 80%;
+    max-width: 400px;
+    min-height: 200px;
+    background:linear-gradient(95deg,rgb(48, 197, 205),rgb(138, 102, 37),rgb(197, 6, 6));
+    position: absolute;
+    left: 82%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.container:hover{
+    border: 4px solid rgb(20, 236, 34);
+    transition: all .3s ease-out;
+}
+
+/* HEADER */
+
+
+
+.survey-header {
+    min-height: 50px;
+    border-bottom: 1px solid rgb(242, 234, 16);
+    padding: 15px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.survey-num {
+    font-weight: bold;
+    font-size: 15px;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.survey-question {
+    font-size: 15px;
+}
+
+
+
+/* BODY */
+
+
+.choices {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-row {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: flex;
+}
+
+.label input[type="checkbox"] {
+    vertical-align: sub;
+    margin-right: 10px;
+    align-self: center;
+    
+}
+
+
+/* FOOTER */
+
+.survey-footer {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.nav-button {
+    padding: 3px 12px;
+    border-radius: 5px;
+    border:none;
+    background: rgb(186, 22, 236);
+    margin-right: 7px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0)
+}
+
+
+/* TEST COMPLETE */
+
+h1.test-completed {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.tick {    
+    position: relative;
+    display: block;
+    margin: 20px auto;     
+    /* margin-top: 30px; */
+    border: 1px solid green;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.tick::before {
+    content: '';
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 32px;
+    border-style: solid;
+    border-color: green;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.results-info {
+    text-align: center;
+    margin-top: 20px;
+}
